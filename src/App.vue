@@ -10,7 +10,23 @@
             <h2>UI Designer Road Map</h2>
           </div>
       </div>
-      <div class="treeWrapper"></div>
+      <div class="treeWrapper">
+          <div class="leftGroup">
+                <div v-for="c in leftGroup" :class="c.class" class="frameOuter">
+                    <div class="blueFrame frame">
+                        <div class="imgBG"></div>
+                    </div>
+                    <div class="arrow"></div>
+                    <p>{{ c.title }}</p>
+                </div>
+          </div>
+          <div class="centerGroup">
+
+          </div>
+          <div class="rightGroup">
+
+          </div>
+      </div>
       <div class="descriptionWrapper"></div>
       <div class="footerWrapper"></div>
   </div>
@@ -20,6 +36,28 @@
 export default {
   data () {
     return {
+        leftGroup: [
+            {
+                class : 'designRule',
+                title: '設計規範'
+            },
+            {
+                class : 'goods',
+                title: '爬梳乾貨'
+            },
+            {
+                class : 'uxThink',
+                title: 'UX思維'
+            },
+            {
+                class : 'designThink',
+                title: '設計思考'
+            },
+            {
+                class : 'psychology',
+                title: '心理學'
+            },
+        ]
     }
   }
 }
@@ -30,17 +68,66 @@ export default {
     $black :#10030A;
     $w :#fff;
     $shaBlue : #0093FF;
+    $borBlue : #5791FF;
+    $innerBlue : #0C467E;
+    $arrowLineWidth : 15px;
+    $frameWidth : 80px;
+    $arrowWidth : 20px;
     @import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
     *{
         margin: 0;
         padding: 0;
         list-style: none;
-        font-family: 'cwTeXYen', 'Poller One';
+        font-family: '微軟正黑體', 'Poller One';
         box-sizing: border-box;
     }
     .imgBG{
         background-size: cover;
         background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .frameOuter{
+        position: relative;
+    }
+    .frame{
+        border: 5px solid $shaBlue;
+        box-shadow: 0 0 0 5px $borBlue;
+        background-color: $innerBlue;
+        width: $frameWidth;
+        height: $frameWidth;
+        position: absolute;
+        border-radius: 30px;
+        .imgBG{
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-size: contain;
+        }
+    }
+    .arrow{
+        width: 100%;
+        height: $frameWidth;
+        position: relative;
+        &:before,&:after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:before{
+            height: $arrowLineWidth;
+            background-color: $w;
+        }
+        &:after{
+            width: 0;
+            height: 0;
+            border-left: $arrowWidth solid $w;
+            border-top: $arrowWidth solid transparent;
+            border-bottom: $arrowWidth solid transparent;
+        }
     }
     #app{
         background: linear-gradient(0deg,$deepPurple , $black);
@@ -124,6 +211,7 @@ export default {
             .titleGroup{
                 margin: 0 0 0 20px;
                 h1,h2{
+                    font-family: 'cwTeXYen', 'Poller One';
                     text-shadow: 2px 2px 0px $shaBlue;
                 }
                 h1{
@@ -138,6 +226,122 @@ export default {
         }
         .treeWrapper{
             height: 50vh;
+            display: flex;
+            color: $w;
+            font-size: 20px;
+            text-shadow: 1px 1px 0px $shaBlue;
+            font-weight: bold;
+            .leftGroup{
+                position: relative;
+                width: 30%;
+                display: flex;
+                flex-wrap: wrap;
+                p{
+                    margin: 10px 0 0 0;
+                }
+                .designRule{
+                    width: 50%;
+                    .frame{
+                        .imgBG{
+                            background-image: url('/dist/images/img_blade-1.png');
+                        }
+                    }
+                    .arrow{
+                        &:before{
+                            width: calc( 100% - 120px );
+                            left: 100px;
+                        }
+                        &:after{
+                            right: 10px;
+                        }
+                    }
+                }
+                .goods{
+                    width: 50%;
+                    .frame{
+                        .imgBG{
+                            background-image: url('/dist/images/img_meat.png');
+                        }
+                    }
+                    .arrow{
+                        &:before{
+                            width: calc( 60% - 120px );
+                            left: 100px;
+                        }
+                        &:after{
+                            border: none;
+                            width: 15px;
+                            height: 200px;
+                            background-color: $w;
+                            right: calc( 60% - 40px );
+                            top: 50%;
+                            transform: translateY(-7px);
+                        }
+                    }
+                }
+                .uxThink{
+                    width: 30%;
+                    .frame{
+                        .imgBG{
+                            background-image: url('/dist/images/img_shield.png');
+                        }
+                    }
+                    .arrow{
+                        &:before{
+                            width: calc( 100% - 120px );
+                            left: 100px;
+                        }
+                        &:after{
+                            right: 10px;
+                        }
+                    }
+                }
+                .designThink{
+                    width: 40%;
+                    .frame{
+                        .imgBG{
+                            background-image: url('/dist/images/img_hat.png');
+                        }
+                    }
+                    .arrow{
+                        &:before{
+                            width: calc( 100% - 120px );
+                            left: 100px;
+                        }
+                        &:after{
+                            right: 10px;
+                        }
+                    }
+                }
+                .psychology{
+                    width: 30%;
+                    p{
+                        margin: 90px 0 0 0;
+                    }
+                    .frame{
+                        .imgBG{
+                            background-image: url('/dist/images/img_horn.png');
+                        }
+                    }
+                    .arrow{
+                        position: absolute;
+                        top: -60%;
+                        &:before{
+                            width: calc( 100% - 60px );
+                            left: 40px;
+                        }
+                        &:after{
+                            right: 10px;
+                        }
+                    }
+                }
+            }
+            .centerGroup{
+                width: 40%;
+            }
+            .rightGroup{
+                width: 30%;
+            }
         }
         .descriptionWrapper{
             height: 50vh;

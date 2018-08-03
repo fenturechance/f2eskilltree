@@ -108,6 +108,8 @@ module.exports = g;
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
@@ -11532,9 +11534,9 @@ process.umask = function() { return 0; };
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(1);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_32fb41c9_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6a9798d4_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(17);
 function injectStyle (ssrContext) {
-  __webpack_require__(8)
+  __webpack_require__(15)
 }
 var normalizeComponent = __webpack_require__(13)
 /* script */
@@ -11552,7 +11554,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_32fb41c9_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6a9798d4_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -11563,33 +11565,8 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(9);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(11)("fcef45de", content, true, {});
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
-// imports
-exports.push([module.i, "@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);", ""]);
-
-// module
-exports.push([module.i, "*{margin:0;padding:0;list-style:none;font-family:cwTeXYen,Poller One}#app{background:linear-gradient(0deg,#301a3b,#10030a)}#app .titleWrapper{height:30vh;color:#fff}#app .descriptionWrapper,#app .treeWrapper{height:50vh}#app .footerWrapper{height:30vh}", ""]);
-
-// exports
-
-
-/***/ }),
+/* 8 */,
+/* 9 */,
 /* 10 */
 /***/ (function(module, exports) {
 
@@ -12042,12 +12019,40 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 14 */
+/* 14 */,
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(16);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(11)("6231efa7", content, true, {});
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// imports
+exports.push([module.i, "@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);", ""]);
+
+// module
+exports.push([module.i, "*{margin:0;padding:0;list-style:none;font-family:cwTeXYen,Poller One}#app{background:linear-gradient(0deg,#301a3b,#10030a)}#app .titleWrapper{height:30vh;color:#fff}#app .descriptionWrapper,#app .treeWrapper{height:50vh}#app .footerWrapper{height:30vh}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('div',{staticClass:"titleWrapper"},[_c('div',{staticClass:"plant"}),_vm._v(" "),_c('h1',[_vm._v("介面設計師轉職之路")]),_vm._v(" "),_c('h2',[_vm._v("UI Designer Road Map")])]),_vm._v(" "),_c('div',{staticClass:"treeWrapper"}),_vm._v(" "),_c('div',{staticClass:"descriptionWrapper"}),_vm._v(" "),_c('div',{staticClass:"footerWrapper"})])}]
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('div',{staticClass:"titleWrapper"},[_c('div',{staticClass:"plant"},[_c('img',{attrs:{"src":"dist/images/img_planet.png","alt":""}})]),_vm._v(" "),_c('h1',[_vm._v("介面設計師轉職之路")]),_vm._v(" "),_c('h2',[_vm._v("UI Designer Road Map")])]),_vm._v(" "),_c('div',{staticClass:"treeWrapper"}),_vm._v(" "),_c('div',{staticClass:"descriptionWrapper"}),_vm._v(" "),_c('div',{staticClass:"footerWrapper"})])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 

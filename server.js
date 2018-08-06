@@ -1,6 +1,6 @@
 let express = require('express');
 let path = require('path');
-let serverStatic = require('server-static');
+let serverStatic = require('serve-static');
 app = express();
 app.use(serverStatic(`${__dirname}/dist`));
 let port = process.env.PORT || 5000;

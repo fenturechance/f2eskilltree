@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 2);
@@ -11570,11 +11570,11 @@ process.umask = function() { return 0; };
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(1);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3a4f9d20_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3a4f9d20_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(21);
 function injectStyle (ssrContext) {
-  __webpack_require__(19)
+  __webpack_require__(8)
 }
-var normalizeComponent = __webpack_require__(13)
+var normalizeComponent = __webpack_require__(20)
 /* script */
 
 
@@ -11601,9 +11601,57 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 8 */,
-/* 9 */,
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(9);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(18)("0dd251f6", content, true, {});
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(10);
+exports = module.exports = __webpack_require__(11)(false);
+// imports
+exports.push([module.i, "@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);", ""]);
+
+// module
+exports.push([module.i, "*{margin:0;padding:0;list-style:none;font-family:\\\\5FAE\\8EDF\\6B63\\9ED1\\9AD4,Poller One;box-sizing:border-box}.imgBG{background-size:cover;background-position:50%;background-repeat:no-repeat}.frameOuter{position:relative}.frame{border:5px solid #0093ff;box-shadow:0 0 0 5px #5791ff;background-color:#0c467e;width:80px;height:80px;position:absolute;border-radius:30px}.frame .imgBG{position:absolute;width:120%;height:120%;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);background-size:contain}.arrow{width:100%;height:80px;position:relative}.arrow:after,.arrow:before{content:\"\";position:absolute;top:50%;transform:translateY(-50%)}.arrow:before{height:15px;background-color:#fff}.arrow:after{width:0;height:0;border-left:20px solid #fff;border-top:20px solid transparent;border-bottom:20px solid transparent}#app{background:linear-gradient(0deg,#301a3b,#10030a);padding:20px 30px}#app .titleWrapper{display:flex;height:25vh;color:#fff;align-items:center;padding:0 30px;position:relative}#app .titleWrapper .startGroup{position:absolute;z-index:1;height:100%;width:100%;top:0;left:0}#app .titleWrapper .startGroup .fa-star{position:absolute}#app .titleWrapper .startGroup .fa-star:first-child{left:0;top:10%;font-size:5px}#app .titleWrapper .startGroup .fa-star:nth-child(2),#app .titleWrapper .startGroup .fa-star:nth-child(3),#app .titleWrapper .startGroup .fa-star:nth-child(4),#app .titleWrapper .startGroup .fa-star:nth-child(6),#app .titleWrapper .startGroup .fa-star:nth-child(8){opacity:.4;font-size:1px}#app .titleWrapper .startGroup .fa-star:nth-child(2){left:2%;top:30%}#app .titleWrapper .startGroup .fa-star:nth-child(3){left:20%;top:5%}#app .titleWrapper .startGroup .fa-star:nth-child(4){left:35%;top:10%}#app .titleWrapper .startGroup .fa-star:nth-child(5){right:45%;top:-10%}#app .titleWrapper .startGroup .fa-star:nth-child(6){right:20%;top:10%}#app .titleWrapper .startGroup .fa-star:nth-child(7){right:10%;top:15%}#app .titleWrapper .startGroup .fa-star:nth-child(8){right:0;bottom:20%}#app .titleWrapper .startGroup:after,#app .titleWrapper .startGroup:before{content:\". . . . . . . . .\";position:absolute;font-size:1px;width:2px;height:100%;line-height:20px}#app .titleWrapper .startGroup:before{left:5%;top:-30%}#app .titleWrapper .startGroup:after{right:30%;top:-20%}#app .titleWrapper .plant{width:150px;height:150px;background-image:url(" + escape(__webpack_require__(12)) + ")}#app .titleWrapper .titleGroup{margin:0 0 0 20px}#app .titleWrapper .titleGroup h1,#app .titleWrapper .titleGroup h2{font-family:cwTeXYen,Poller One;text-shadow:2px 2px 0 #0093ff}#app .titleWrapper .titleGroup h1{font-size:52px;letter-spacing:5px}#app .titleWrapper .titleGroup h2{font-size:30px;letter-spacing:3px}#app .treeWrapper{height:50vh;display:flex;color:#fff;font-size:20px;text-shadow:1px 1px 0 #0093ff;font-weight:700}#app .treeWrapper .leftGroup{position:relative;width:30%;display:flex;flex-wrap:wrap}#app .treeWrapper .leftGroup p{margin:10px 0 0}#app .treeWrapper .leftGroup .designRule{width:50%}#app .treeWrapper .leftGroup .designRule .frame .imgBG{background-image:url(" + escape(__webpack_require__(13)) + ")}#app .treeWrapper .leftGroup .designRule .arrow:before{width:calc(100% - 120px);left:100px}#app .treeWrapper .leftGroup .designRule .arrow:after{right:10px}#app .treeWrapper .leftGroup .goods{width:50%}#app .treeWrapper .leftGroup .goods .frame .imgBG{background-image:url(" + escape(__webpack_require__(14)) + ")}#app .treeWrapper .leftGroup .goods .arrow:before{width:calc(60% - 120px);left:100px}#app .treeWrapper .leftGroup .goods .arrow:after{border:none;width:15px;height:200px;background-color:#fff;right:calc(60% - 40px);top:50%;transform:translateY(-7px)}#app .treeWrapper .leftGroup .uxThink{width:30%}#app .treeWrapper .leftGroup .uxThink .frame .imgBG{background-image:url(" + escape(__webpack_require__(15)) + ")}#app .treeWrapper .leftGroup .uxThink .arrow:before{width:calc(100% - 120px);left:100px}#app .treeWrapper .leftGroup .uxThink .arrow:after{right:10px}#app .treeWrapper .leftGroup .designThink{width:40%}#app .treeWrapper .leftGroup .designThink .frame .imgBG{background-image:url(" + escape(__webpack_require__(16)) + ")}#app .treeWrapper .leftGroup .designThink .arrow:before{width:calc(100% - 120px);left:100px}#app .treeWrapper .leftGroup .designThink .arrow:after{right:10px}#app .treeWrapper .leftGroup .psychology{width:30%}#app .treeWrapper .leftGroup .psychology p{margin:90px 0 0}#app .treeWrapper .leftGroup .psychology .frame .imgBG{background-image:url(" + escape(__webpack_require__(17)) + ")}#app .treeWrapper .leftGroup .psychology .arrow{position:absolute;top:-60%}#app .treeWrapper .leftGroup .psychology .arrow:before{width:calc(100% - 60px);left:40px}#app .treeWrapper .leftGroup .psychology .arrow:after{right:10px}#app .treeWrapper .centerGroup{width:40%}#app .treeWrapper .rightGroup{width:30%}#app .descriptionWrapper{height:50vh}#app .footerWrapper{height:30vh}", ""]);
+
+// exports
+
+
+/***/ }),
 /* 10 */
+/***/ (function(module, exports) {
+
+module.exports = function escape(url) {
+    if (typeof url !== 'string') {
+        return url
+    }
+    // If url is already wrapped in quotes, remove them
+    if (/^['"].*['"]$/.test(url)) {
+        url = url.slice(1, -1);
+    }
+    // Should url be wrapped?
+    // See https://drafts.csswg.org/css-values-3/#urls
+    if (/["'() \t\n]/.test(url)) {
+        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
+    }
+
+    return url
+}
+
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports) {
 
 /*
@@ -11685,7 +11733,43 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 11 */
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/img_planet.png?eaa285b016795d3d813f007fd8627d68";
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/img_blade-1.png?2aae8714bfe8f56a4f822bd8acf08726";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/img_meat.png?49d41d4c2e4814e82bd8dd9f2f26724b";
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/img_shield.png?cd817be1e3bbe78b48d3665f038f58ec";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/img_hat.png?9a80c874087744f3a5cfa0ff6d464341";
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/img_horn.png?34e3baf0d4637621f738c394bed72d9a";
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -11704,7 +11788,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(12)
+var listToStyles = __webpack_require__(19)
 
 /*
 type StyleObject = {
@@ -11913,7 +11997,7 @@ function applyToTag (styleElement, obj) {
 
 
 /***/ }),
-/* 12 */
+/* 19 */
 /***/ (function(module, exports) {
 
 /**
@@ -11946,7 +12030,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 13 */
+/* 20 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -12055,97 +12139,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
-/* 18 */,
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(20);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(11)("0dd251f6", content, true, {});
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var escape = __webpack_require__(17);
-exports = module.exports = __webpack_require__(10)(false);
-// imports
-exports.push([module.i, "@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);", ""]);
-
-// module
-exports.push([module.i, "*{margin:0;padding:0;list-style:none;font-family:\\\\5FAE\\8EDF\\6B63\\9ED1\\9AD4,Poller One;box-sizing:border-box}.imgBG{background-size:cover;background-position:50%;background-repeat:no-repeat}.frameOuter{position:relative}.frame{border:5px solid #0093ff;box-shadow:0 0 0 5px #5791ff;background-color:#0c467e;width:80px;height:80px;position:absolute;border-radius:30px}.frame .imgBG{position:absolute;width:120%;height:120%;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);background-size:contain}.arrow{width:100%;height:80px;position:relative}.arrow:after,.arrow:before{content:\"\";position:absolute;top:50%;transform:translateY(-50%)}.arrow:before{height:15px;background-color:#fff}.arrow:after{width:0;height:0;border-left:20px solid #fff;border-top:20px solid transparent;border-bottom:20px solid transparent}#app{background:linear-gradient(0deg,#301a3b,#10030a);padding:20px 30px}#app .titleWrapper{display:flex;height:25vh;color:#fff;align-items:center;padding:0 30px;position:relative}#app .titleWrapper .startGroup{position:absolute;z-index:1;height:100%;width:100%;top:0;left:0}#app .titleWrapper .startGroup .fa-star{position:absolute}#app .titleWrapper .startGroup .fa-star:first-child{left:0;top:10%;font-size:5px}#app .titleWrapper .startGroup .fa-star:nth-child(2),#app .titleWrapper .startGroup .fa-star:nth-child(3),#app .titleWrapper .startGroup .fa-star:nth-child(4),#app .titleWrapper .startGroup .fa-star:nth-child(6),#app .titleWrapper .startGroup .fa-star:nth-child(8){opacity:.4;font-size:1px}#app .titleWrapper .startGroup .fa-star:nth-child(2){left:2%;top:30%}#app .titleWrapper .startGroup .fa-star:nth-child(3){left:20%;top:5%}#app .titleWrapper .startGroup .fa-star:nth-child(4){left:35%;top:10%}#app .titleWrapper .startGroup .fa-star:nth-child(5){right:45%;top:-10%}#app .titleWrapper .startGroup .fa-star:nth-child(6){right:20%;top:10%}#app .titleWrapper .startGroup .fa-star:nth-child(7){right:10%;top:15%}#app .titleWrapper .startGroup .fa-star:nth-child(8){right:0;bottom:20%}#app .titleWrapper .startGroup:after,#app .titleWrapper .startGroup:before{content:\". . . . . . . . .\";position:absolute;font-size:1px;width:2px;height:100%;line-height:20px}#app .titleWrapper .startGroup:before{left:5%;top:-30%}#app .titleWrapper .startGroup:after{right:30%;top:-20%}#app .titleWrapper .plant{width:150px;height:150px;background-image:url(" + escape(__webpack_require__(21)) + ")}#app .titleWrapper .titleGroup{margin:0 0 0 20px}#app .titleWrapper .titleGroup h1,#app .titleWrapper .titleGroup h2{font-family:cwTeXYen,Poller One;text-shadow:2px 2px 0 #0093ff}#app .titleWrapper .titleGroup h1{font-size:52px;letter-spacing:5px}#app .titleWrapper .titleGroup h2{font-size:30px;letter-spacing:3px}#app .treeWrapper{height:50vh;display:flex;color:#fff;font-size:20px;text-shadow:1px 1px 0 #0093ff;font-weight:700}#app .treeWrapper .leftGroup{position:relative;width:30%;display:flex;flex-wrap:wrap}#app .treeWrapper .leftGroup p{margin:10px 0 0}#app .treeWrapper .leftGroup .designRule{width:50%}#app .treeWrapper .leftGroup .designRule .frame .imgBG{background-image:url(" + escape(__webpack_require__(22)) + ")}#app .treeWrapper .leftGroup .designRule .arrow:before{width:calc(100% - 120px);left:100px}#app .treeWrapper .leftGroup .designRule .arrow:after{right:10px}#app .treeWrapper .leftGroup .goods{width:50%}#app .treeWrapper .leftGroup .goods .frame .imgBG{background-image:url(" + escape(__webpack_require__(23)) + ")}#app .treeWrapper .leftGroup .goods .arrow:before{width:calc(60% - 120px);left:100px}#app .treeWrapper .leftGroup .goods .arrow:after{border:none;width:15px;height:200px;background-color:#fff;right:calc(60% - 40px);top:50%;transform:translateY(-7px)}#app .treeWrapper .leftGroup .uxThink{width:30%}#app .treeWrapper .leftGroup .uxThink .frame .imgBG{background-image:url(" + escape(__webpack_require__(24)) + ")}#app .treeWrapper .leftGroup .uxThink .arrow:before{width:calc(100% - 120px);left:100px}#app .treeWrapper .leftGroup .uxThink .arrow:after{right:10px}#app .treeWrapper .leftGroup .designThink{width:40%}#app .treeWrapper .leftGroup .designThink .frame .imgBG{background-image:url(" + escape(__webpack_require__(25)) + ")}#app .treeWrapper .leftGroup .designThink .arrow:before{width:calc(100% - 120px);left:100px}#app .treeWrapper .leftGroup .designThink .arrow:after{right:10px}#app .treeWrapper .leftGroup .psychology{width:30%}#app .treeWrapper .leftGroup .psychology p{margin:90px 0 0}#app .treeWrapper .leftGroup .psychology .frame .imgBG{background-image:url(" + escape(__webpack_require__(26)) + ")}#app .treeWrapper .leftGroup .psychology .arrow{position:absolute;top:-60%}#app .treeWrapper .leftGroup .psychology .arrow:before{width:calc(100% - 60px);left:40px}#app .treeWrapper .leftGroup .psychology .arrow:after{right:10px}#app .treeWrapper .centerGroup{width:40%}#app .treeWrapper .rightGroup{width:30%}#app .descriptionWrapper{height:50vh}#app .footerWrapper{height:30vh}", ""]);
-
-// exports
-
-
-/***/ }),
 /* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img_planet.png?eaa285b016795d3d813f007fd8627d68";
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img_blade-1.png?2aae8714bfe8f56a4f822bd8acf08726";
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img_meat.png?49d41d4c2e4814e82bd8dd9f2f26724b";
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img_shield.png?cd817be1e3bbe78b48d3665f038f58ec";
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img_hat.png?9a80c874087744f3a5cfa0ff6d464341";
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img_horn.png?34e3baf0d4637621f738c394bed72d9a";
-
-/***/ }),
-/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

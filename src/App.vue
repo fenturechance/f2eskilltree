@@ -206,7 +206,7 @@ export default {
             .plant{
                 width: 150px;
                 height: 150px;
-                background-image: url('/dist/images/img_planet.png');
+                background-image: url('../dist/images/img_planet.png');
             }
             .titleGroup{
                 margin: 0 0 0 20px;
@@ -243,7 +243,7 @@ export default {
                     width: 50%;
                     .frame{
                         .imgBG{
-                            background-image: url('/dist/images/img_blade-1.png');
+                            background-image: url('../dist/images/img_blade-1.png');
                         }
                     }
                     .arrow{
@@ -260,7 +260,7 @@ export default {
                     width: 50%;
                     .frame{
                         .imgBG{
-                            background-image: url('/dist/images/img_meat.png');
+                            background-image: url('../dist/images/img_meat.png');
                         }
                     }
                     .arrow{
@@ -283,7 +283,7 @@ export default {
                     width: 30%;
                     .frame{
                         .imgBG{
-                            background-image: url('/dist/images/img_shield.png');
+                            background-image: url('../dist/images/img_shield.png');
                         }
                     }
                     .arrow{
@@ -300,7 +300,7 @@ export default {
                     width: 40%;
                     .frame{
                         .imgBG{
-                            background-image: url('/dist/images/img_hat.png');
+                            background-image: url('../dist/images/img_hat.png');
                         }
                     }
                     .arrow{
@@ -320,7 +320,7 @@ export default {
                     }
                     .frame{
                         .imgBG{
-                            background-image: url('/dist/images/img_horn.png');
+                            background-image: url('../dist/images/img_horn.png');
                         }
                     }
                     .arrow{
